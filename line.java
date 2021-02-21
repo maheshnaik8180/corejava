@@ -33,11 +33,18 @@ public class line {
 		double Len2 =  Math.sqrt(cal3+cal4);
 		System.out.println("Length of Line1 and Line2 is "+ Len1 +" & "+ Len2);
 		
+
 		String Length1 = Double.toString(Len1);
 		String Length2 = Double.toString(Len2);
 		
 		
-		System.out.println(Length1.equals(Length2));
+		int value = Double.compare(Len1, Len2);
+		if (value == 0)
+			System.out.println("Lines are equal");
+		else if (value == 1)
+			System.out.println("Line 1 is greater than Line 2");
+		else
+			System.out.println("Line 1 is less than Line 2");
 		
 		
 
